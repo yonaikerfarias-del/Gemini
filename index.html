@@ -1,46 +1,92 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog da Copa do Mundo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Configurações Gerais */
+body {
+    background-color: #1a1a24;
+    color: #ffffff;
+    font-family: 'Press Start 2P', monospace; /* Fonte Pixel */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
 
-    <header class="main-header">
-        <div class="header-content">
-            <h1>MUNDO DA COPA</h1>
-            <p>O epicentro das maiores emoções do futebol mundial!</p>
-        </div>
-    </header>
+/* Cabeçalho */
+header {
+    background-color: #2a2b3d;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 6px solid #4ade80; /* Bordas grossas estilo pixel */
+}
 
-    <main class="container">
-        
-        <article class="card card-brasil">
-            <div class="card-badge">Destaque</div>
-            <div class="card-body">
-                <h2>Rumo ao Hexa: A força da torcida</h2>
-                <p>A união e as cores das arquibancadas mostram por que a Copa do Mundo é o maior espetáculo da Terra.</p>
-                <a href="#" class="btn">Ler Post Completo</a>
-            </div>
-        </article>
+header h1 {
+    color: #4ade80;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-        <article class="card card-neon">
-            <div class="card-badge">Novidade</div>
-            <div class="card-body">
-                <h2>As Maiores Zebras da História</h2>
-                <p>Quando o favoritismo cai por terra e os azarões fazem história nos gramados mundiais.</p>
-                <a href="#" class="btn">Ler Post Completo</a>
-            </div>
-        </article>
+header p {
+    font-size: 12px;
+    color: #a78bfa;
+}
 
-    </main>
+/* Layout dos Posts */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-    <footer>
-        <p>&copy; 2026 - Criado com a paixão do futebol</p>
-    </footer>
+.post {
+    background-color: #222331;
+    border: 4px solid #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 8px 8px 0px #000000; /* Sombra sólida pixelada */
+}
 
-</body>
-</html>
+/* Efeito Pixel nas Imagens */
+.pixel-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border: 4px solid #4ade80;
+    /* O segredo para deixar imagens comuns com aspecto pixelado/focado ao reduzir */
+    image-rendering: pixelated; 
+    image-rendering: crisp-edges;
+}
+
+.post h2 {
+    font-size: 16px;
+    color: #facc15;
+    margin-top: 15px;
+}
+
+.post p {
+    font-size: 10px;
+    color: #cbd5e1;
+}
+
+/* Botão Pixelado */
+.btn {
+    display: inline-block;
+    background-color: #facc15;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 10px;
+    border: 3px solid #ffffff;
+    box-shadow: 4px 4px 0px #000000;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #eab308;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 8px;
+    color: #64748b;
+}
